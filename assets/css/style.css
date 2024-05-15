@@ -1,0 +1,43 @@
+body {
+  background-color: white;
+}
+body header {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header button {
+  width: 10vw;
+  height: 10vh;
+  background-color: transparent;
+  border: none;
+}
+body header button img {
+  width: 10vw;
+  height: 10vh;
+}
+body main {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+body main article#today_weather {
+  display: flex;
+  height: 50vh;
+  width: 90vw;
+  justify-content: center;
+}
+body main article#other_days {
+  display: flex;
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+}
+body footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
