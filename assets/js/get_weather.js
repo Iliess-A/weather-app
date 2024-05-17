@@ -6,11 +6,13 @@ export async function get_weather(city){
         `);
         
         const data = await response.json();
+    
         return data;
 
     } catch (error) {
 
         console.error("An error occurred while fetching the weather data:", error);
     }
-      
+    
+    
 }
