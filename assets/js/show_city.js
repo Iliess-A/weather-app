@@ -25,6 +25,6 @@ export function show_city(){
 }
 
 function dom_affichage(objet){
-    console.log(objet);
     
+
 }

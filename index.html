@@ -10,22 +10,40 @@
 <body>
     <header>
         <!-- rien pour le moment -->
-        <label for="search_country" style="display: none;">which city would u like check the temp for</label>
+        <label for="search_country">which city would u like check the temp for</label>
         <input type="text" id="search_country" placeholder="your city name...">
-        <button id="submit_city"><img src="assets/img_icon/loop_ext(black).svg" alt=""></button>
+        <button id="submit_city"><img src="assets/img_icon/loop_ext(black).svg" alt="button to submit search"></button>
     </header>
 
     <main>
         <!-- weather app -->
         <article id="today_weather">
             <h2>today_weather</h2>
-
-
+            <div id="weather_img_today">
+                <img src="assets/img_icon/Soleil.png" alt="">
+            </div>
+            <div id="temps_today">
+                <h2>22&deg;</h2>
+                <div id="weather_parametre">
+                    <p>min</p>
+                    <p>max</p>
+                    <p>hum</p>
+                    <p>vent</p>
+                </div>
+            </div>
         </article>
 
         <article id="other_days">
             <h2>Other days</h2>
             <!-- genere un article par jours avec les donner -->
+            <div class="other_days">
+                <p>day</p>
+                <p>icon</p>
+                <p>min</p>
+                <p>max</p>
+                <p>humidity</p>
+                <p>wind</p>
+            </div>
         </article>
     </main>
 
