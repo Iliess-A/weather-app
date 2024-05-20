@@ -34,7 +34,7 @@ function dom_affichage(objet){
     const main_hum = document.getElementById('main_hum');
     const main_wind = document.getElementById('main_wind');
 
-    main_day.textContent = get_dateInfo(objet.list[0].dt);
+    main_day.textContent = get_dateInfo(objet.list[0].dt).day_name;
     main_temp.textContent = objet.list[0].main.temp +'°C';
     main_min.textContent = objet.list[0].main.temp_min +'°C';;
     main_max.textContent = objet.list[0].main.temp_max +'°C';;

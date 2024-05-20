@@ -3,5 +3,9 @@ export function get_dateInfo(dt){
     let date = new Date(dt *1000);
     let date_day= date.getDay();
     console.log(date.getDay());
-    return date_day;
+    const day_info ={
+        day_name : 'lundi',
+        day : date.getDay()
+    }
+    return day_info
 }
