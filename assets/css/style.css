@@ -109,6 +109,7 @@ body main article#other_days .other_days {
   border-radius: 15px;
   background-color: rgba(128, 128, 128, 0.473);
   margin-bottom: 1vh;
+  margin-top: 1vh;
 }
 body footer {
   height: 20vh;
