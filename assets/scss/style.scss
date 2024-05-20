@@ -41,10 +41,10 @@ body{
         display: flex;
         flex-direction: column;
         article{
-
+            height: auto;
             &#today_weather{
                 display: flex;
-                height: 50vh;
+                height: 70vh;
                 width: 90vw;
                 justify-content: center;
                 flex-direction: column;
@@ -74,6 +74,18 @@ body{
                             grid-template-rows: auto auto;
                             column-gap: 15vw;
                             row-gap: 5vh;
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                            button#graph{
+                                width: 50px;
+                                height: 50px;
+                                background-color: transparent;
+                                position: absolute;
+                                right: 1vh;
+                                bottom: 1vh;
+                            }
                         }
                     }
 
@@ -92,10 +104,13 @@ body{
                 border-radius: 15px;
                 
                 .other_days{
+                    width: 85vw;
                     display: flex;
                     flex-direction: row;
+                    justify-content: space-evenly;
                     border-radius: 15px;
                     background-color: rgba(128, 128, 128, 0.473);
+                    margin-bottom: 1vh;
 
                 }
 

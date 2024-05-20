@@ -39,9 +39,12 @@ body main {
   display: flex;
   flex-direction: column;
 }
+body main article {
+  height: auto;
+}
 body main article#today_weather {
   display: flex;
-  height: 50vh;
+  height: 70vh;
   width: 90vw;
   justify-content: center;
   flex-direction: column;
@@ -75,6 +78,18 @@ body main article#today_weather div#temps_today #weather_parametre {
        column-gap: 15vw;
   row-gap: 5vh;
 }
+body main article#today_weather div#temps_today #weather_parametre img {
+  width: 100px;
+  height: 100px;
+}
+body main article#today_weather div#temps_today #weather_parametre button#graph {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  right: 1vh;
+  bottom: 1vh;
+}
 body main article#other_days {
   margin-top: 2vh;
   display: flex;
@@ -87,10 +102,13 @@ body main article#other_days {
   border-radius: 15px;
 }
 body main article#other_days .other_days {
+  width: 85vw;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   border-radius: 15px;
   background-color: rgba(128, 128, 128, 0.473);
+  margin-bottom: 1vh;
 }
 body footer {
   height: 20vh;
