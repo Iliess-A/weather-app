@@ -27,6 +27,13 @@ export function show_city(){
 
 function dom_affichage(objet){
     console.log(objet);
+
+    const city_Name = document.getElementById('city_name');
+    city_Name.innerHTML='';
+    const h1_name = document.createElement('h1');
+    h1_name.textContent = objet.city.name;
+    city_Name.appendChild(h1_name);
+
     const main_day = document.getElementById('today_day');
     const main_temp = document.getElementById('main_temp');
     const main_min = document.getElementById('main_min');
@@ -35,9 +42,9 @@ function dom_affichage(objet){
     const main_wind = document.getElementById('main_wind');
 
     main_day.textContent = get_dateInfo(objet.list[0].dt).day_name;
-    main_temp.textContent = objet.list[0].main.temp +'°C';
-    main_min.textContent = objet.list[0].main.temp_min +'°C';;
-    main_max.textContent = objet.list[0].main.temp_max +'°C';;
+    main_temp.textContent = (objet.list[0].main.temp).toFixed(1) +'°C';
+    main_min.textContent = (objet.list[0].main.temp_min).toFixed(1) +'°C';;
+    main_max.textContent = (objet.list[0].main.temp_max).toFixed(1)+'°C';;
     main_hum.textContent = objet.list[0].main.humidity +'%';
     main_wind.textContent = (objet.list[0].wind.speed * 3.6).toFixed(0) +'km/h';
 
@@ -69,8 +76,8 @@ function dom_affichage(objet){
 
         p_day.textContent =  get_dateInfo(next_day[i].dt).day_name;
         // p_icon.appendChild('');//cree une fonction qui vas metre la bonne icon plus neige etc;
-        p_min.textContent = next_day[i].main.temp_max;
-        p_max.textContent = next_day[i].main.temp_min;
+        p_min.textContent = (next_day[i].main.temp_max).toFixed(1) +'°C';
+        p_max.textContent = (next_day[i].main.temp_min).toFixed(1) +'°C';
         p_hum.textContent = next_day[i].main.humidity +'%';
         p_wind.textContent =(next_day[i].wind.speed * 3.6).toFixed(0) +'km/h';
 
